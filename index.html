@@ -1,387 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-  <style>
-    /* CONTENEUR PHOTO CENTRÉ */
-.photo-centre {
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
-}
-
-/* CADRE PHOTO */
-.cadre-photo {
-  background: linear-gradient(145deg, #1c1c1c, #000000);
-  padding: 10px;
-  border-radius: 18px;
-  box-shadow:
-    0 10px 25px rgba(0,0,0,0.8),
-    inset 0 0 10px rgba(255,255,255,0.05);
-}
-
-/* IMAGE DANS LE CADRE */
-.cadre-photo img {
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  border-radius: 14px;
-  border: 3px solid #333;
-}
-
-/* EFFET AU TOUCHER (SUR TELEPHONE AUSSI) */
-.cadre-photo img:hover {
-  transform: scale(1.03);
-  transition: 0.3s ease;
-}
-  body {
-    background-color: #121212; /* fond sombre */
-    color: #f0f0f0;           /* texte clair */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 15px;
-  }
-
-  h1, h2 {
-    color: #00bcd4; /* couleur des titres */
-  }
-
-  img {
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-
-  p {
-    line-height: 1.6;
-  }
-  </style>
   <meta charset="UTF-8">
   <title>Ma présentation</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <h1>Ma présentation</h1>
 
-<section class="bloc">
-  <h2>Quand j’étais petit</h2>
+  <h1 class="titre">Ma présentation</h1>
 
-  <div class="photo-centre">
-    <div class="cadre-photo">
-      <img src="enfance.jpg" alt="Photo enfance">
+  <!-- SECTION ENFANCE -->
+  <section class="section">
+    <h2>Quand j’étais petit</h2>
+
+    <div class="photo-wrapper">
+      <div class="photo-cadre">
+        <img src="enfance.jpg" alt="Photo enfance">
+      </div>
     </div>
-  </div>
 
-  <p>
-    À l’âge de 3 ans, j’étais très calme et souvent pleurnichard.
-    Je n’aimais pas l’école. Chaque fois que je voyais la barrière
-    de l’école, je pleurais et je ne voulais pas entrer.
-    J’ai détesté l’école jusqu’au moment où je me suis peu à peu habitué
-    en grandissant.
-  </p>
-</section>
-<img src="20260119_103851.jpg" alt="Photo enfance" width="250">
-<p> <div class="photo-centre">
-  <div class="cadre-photo">
-    <img src="photo-enfance.jpg" alt="Photo enfance">
-  </div>
-</div>
-À l’âge de 3 ans, j’étais très calme et souvent pleurnichard.
-Je n’aimais pas l’école. Chaque fois que je voyais la barrière
-de l’école, je pleurais et je ne voulais pas entrer.
-J’ai détesté l’école jusqu’au moment où je me suis peu à peu
-habitué en grandissant.
-</p> <div class="photo-centre">
-  <div class="cadre-photo">
-    <img src="photo-adulte.jpg" alt="Photo adulte">
-  </div>
-</div>
+    <p>
+      À l’âge de 3 ans, j’étais très calme et souvent pleurnichard.
+      Je n’aimais pas l’école. Chaque fois que je voyais la barrière
+      de l’école, je pleurais et je ne voulais pas entrer.
+      J’ai détesté l’école jusqu’au moment où je me suis peu à peu
+      habitué en grandissant.
+    </p>
+  </section>
 
-<section class="bloc">
-  <h2>Quand je suis grand</h2>
+  <!-- SECTION ADULTE -->
+  <section class="section">
+    <h2>Quand je suis grand</h2>
 
-  <div class="photo-centre">
-    <div class="cadre-photo">
-      <img src="adulte.jpg" alt="Photo adulte">
+    <div class="photo-wrapper">
+      <div class="photo-cadre">
+        <img src="adulte.jpg" alt="Photo adulte">
+      </div>
     </div>
+
+    <p>
+      Aujourd’hui, j’ai 20 ans. Je suis toujours calme, mais j’ai pris
+      conscience du monde des étudiants. J’ai terminé les humanités
+      et obtenu mon bac avec 54 %, malgré beaucoup d’efforts.
+      Je me suis orienté vers l’électricité, une filière que j’aime.
+      Actuellement, je m’intéresse à la technique et à de petits business.
+      Mon objectif est de terminer mes études universitaires et de
+      développer mes projets.
+    </p>
+  </section>
+
+  <!-- ACTIVITÉS -->
+  <h2 class="titre-activites">ACTIVITÉS</h2>
+
+  <div class="table-zone">
+    <table>
+      <thead>
+        <tr>
+          <th>N°</th>
+          <th>Col 01</th><th>Col 02</th><th>Col 03</th><th>Col 04</th>
+          <th>Col 05</th><th>Col 06</th><th>Col 07</th><th>Col 08</th>
+          <th>Col 09</th><th>Col 10</th><th>Col 11</th><th>Col 12</th>
+          <th>Col 13</th><th>Col 14</th><th>Col 15</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 16 lignes -->
+        <tr><td>01</td><td colspan="15"></td></tr>
+        <tr><td>02</td><td colspan="15"></td></tr>
+        <tr><td>03</td><td colspan="15"></td></tr>
+        <tr><td>04</td><td colspan="15"></td></tr>
+        <tr><td>05</td><td colspan="15"></td></tr>
+        <tr><td>06</td><td colspan="15"></td></tr>
+        <tr><td>07</td><td colspan="15"></td></tr>
+        <tr><td>08</td><td colspan="15"></td></tr>
+        <tr><td>09</td><td colspan="15"></td></tr>
+        <tr><td>10</td><td colspan="15"></td></tr>
+        <tr><td>11</td><td colspan="15"></td></tr>
+        <tr><td>12</td><td colspan="15"></td></tr>
+        <tr><td>13</td><td colspan="15"></td></tr>
+        <tr><td>14</td><td colspan="15"></td></tr>
+        <tr><td>15</td><td colspan="15"></td></tr>
+        <tr><td>16</td><td colspan="15"></td></tr>
+      </tbody>
+    </table>
   </div>
 
-  <p>
-    Aujourd’hui, j’ai 20 ans. Je suis toujours calme, mais j’ai pris
-    conscience du monde des étudiants. J’ai terminé les humanités
-    et obtenu mon bac avec 54 %, malgré beaucoup d’efforts.
-    Je me suis orienté vers l’électricité, une filière que j’aime.
-  </p>
-</section>
-<img src="IMG-20260109-WA2892.jpg" alt="Photo actuelle" width="250">
-<p>
-Aujourd’hui, j’ai 20 ans. Je suis toujours calme,
-mais j’ai pris conscience du monde des étudiants.
-J’ai terminé les humanités et obtenu mon bac avec
-54 %, malgré beaucoup d’efforts.
-Je me suis orienté vers l’électricité, une filière que j’aime.
-Actuellement, je m’intéresse à la technique et à de petits
-business. Mon objectif est de terminer mes études
-universitaires et de développer mes projets.
-</p>
-  <h2 style="text-align:center; margin-top:40px;">ACTIVITÉS</h2>
-
-<style>
-  body {
-  background: #0b0b0b;
-  color: #eaeaea;
-  font-family: Arial, sans-serif;
-}
-
-/* Bloc section */
-.bloc {
-  max-width: 700px;
-  margin: 40px auto;
-  text-align: center;
-}
-
-/* Titres */
-.bloc h2 {
-  color: #00c2c7;
-  margin-bottom: 20px;
-}
-
-/* Centrage photo */
-.photo-centre {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-/* Cadre élégant */
-.cadre-photo {
-  background: linear-gradient(145deg, #111, #000);
-  padding: 10px;
-  border-radius: 18px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
-}
-
-/* Image */
-.cadre-photo img {
-  max-width: 260px;
-  width: 100%;
-  border-radius: 14px;
-  border: 3px solid #333;
-}
-
-/* Texte */
-.bloc p {
-  line-height: 1.7;
-  margin-top: 20px;
-}
-  table.activites {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #1e1e1e;
-    color: white;
-    font-size: 12px;
-  }
-
-  table.activites th,
-  table.activites td {
-    border: 1px solid #555;
-    padding: 8px;
-    text-align: center;
-  }
-
-  table.activites th {
-    background-color: #0b2a3a;
-    font-weight: bold;
-  }
-
-  table.activites tr:nth-child(even) {
-    background-color: #222;
-  }
-</style>
-
-<table class="activites">
-  <tr>
-    <th>N°</th>
-    <th>Col 01</th><th>Col 02</th><th>Col 03</th><th>Col 04</th>
-    <th>Col 05</th><th>Col 06</th><th>Col 07</th><th>Col 08</th>
-    <th>Col 09</th><th>Col 10</th><th>Col 11</th><th>Col 12</th>
-    <th>Col 13</th><th>Col 14</th><th>Col 15</th>
-  </tr>
-
-  <!-- 16 lignes -->
-  <tr><td>01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>02</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>03</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>04</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>05</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>06</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>07</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>08</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>09</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>10</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>11</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>12</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>13</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>14</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>15</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td>16</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-</table>
-
- <style>
-/* STYLE GENERAL */
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f2f4f7;
-  color: #333;
-}
-
-/* BANNIERE */
-.header {
-  background-color: #2f4456;
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
-.header p {
-  margin-top: 10px;
-  font-size: 16px;
-  opacity: 0.9;
-}
-
-/* SECTIONS */
-.section {
-  background-color: white;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* TITRES */
-.section h2 {
-  margin-top: 0;
-  color: #2f4456;
-  border-bottom: 3px solid #3fa9f5;
-  padding-bottom: 8px;
-}
-
-/* IMAGES */
-.section img {
-  width: 100%;
-  max-width: 350px;
-  border-radius: 10px;
-  display: block;
-  margin: 15px auto;
-}
-
-/* TABLEAU */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  overflow-x: auto;
-}
-
-th, td {
-  border: 1px solid #ccc;
-  padding: 6px;
-  text-align: center;
-  font-size: 12px;
-}
-
-th {
-  background-color: #2f4456;
-  color: white;
-}
-
-tr:nth-child(even) {
-  background-color: #f5f5f5;
-}
- </style>
-  <style>
-/* STYLE GENERAL */
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #0f0f0f; /* noir doux */
-  color: #eaeaea;
-}
-
-/* BANNIERE */
-.header {
-  background: linear-gradient(135deg, #000000, #1c1c1c);
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
-.header p {
-  margin-top: 10px;
-  font-size: 16px;
-  opacity: 0.85;
-}
-
-/* SECTIONS */
-.section {
-  background-color: #1a1a1a;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.6);
-}
-
-/* TITRES */
-.section h2 {
-  margin-top: 0;
-  color: #ffffff;
-  border-bottom: 3px solid #444;
-  padding-bottom: 8px;
-}
-
-/* IMAGES */
-.section img {
-  width: 100%;
-  max-width: 350px;
-  border-radius: 12px;
-  display: block;
-  margin: 15px auto;
-  border: 3px solid #333;
-}
-
-/* TABLEAU */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  overflow-x: auto;
-  background-color: #111;
-}
-
-th, td {
-  border: 1px solid #333;
-  padding: 6px;
-  text-align: center;
-  font-size: 12px;
-  color: #eaeaea;
-}
-
-th {
-  background-color: #000;
-  color: #ffffff;
-}
-
-tr:nth-child(even) {
-  background-color: #1c1c1c;
-}
-  </style>
 </body>
 </html>
