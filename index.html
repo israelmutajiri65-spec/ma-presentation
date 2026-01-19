@@ -62,7 +62,23 @@
   
   <h1>Ma présentation</h1>
 
-<h2>Quand j’étais petit</h2>
+<section class="bloc">
+  <h2>Quand j’étais petit</h2>
+
+  <div class="photo-centre">
+    <div class="cadre-photo">
+      <img src="enfance.jpg" alt="Photo enfance">
+    </div>
+  </div>
+
+  <p>
+    À l’âge de 3 ans, j’étais très calme et souvent pleurnichard.
+    Je n’aimais pas l’école. Chaque fois que je voyais la barrière
+    de l’école, je pleurais et je ne voulais pas entrer.
+    J’ai détesté l’école jusqu’au moment où je me suis peu à peu habitué
+    en grandissant.
+  </p>
+</section>
 <img src="20260119_103851.jpg" alt="Photo enfance" width="250">
 <p> <div class="photo-centre">
   <div class="cadre-photo">
@@ -80,7 +96,22 @@ habitué en grandissant.
   </div>
 </div>
 
-<h2>Quand je suis grand</h2>
+<section class="bloc">
+  <h2>Quand je suis grand</h2>
+
+  <div class="photo-centre">
+    <div class="cadre-photo">
+      <img src="adulte.jpg" alt="Photo adulte">
+    </div>
+  </div>
+
+  <p>
+    Aujourd’hui, j’ai 20 ans. Je suis toujours calme, mais j’ai pris
+    conscience du monde des étudiants. J’ai terminé les humanités
+    et obtenu mon bac avec 54 %, malgré beaucoup d’efforts.
+    Je me suis orienté vers l’électricité, une filière que j’aime.
+  </p>
+</section>
 <img src="IMG-20260109-WA2892.jpg" alt="Photo actuelle" width="250">
 <p>
 Aujourd’hui, j’ai 20 ans. Je suis toujours calme,
@@ -95,6 +126,53 @@ universitaires et de développer mes projets.
   <h2 style="text-align:center; margin-top:40px;">ACTIVITÉS</h2>
 
 <style>
+  body {
+  background: #0b0b0b;
+  color: #eaeaea;
+  font-family: Arial, sans-serif;
+}
+
+/* Bloc section */
+.bloc {
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* Titres */
+.bloc h2 {
+  color: #00c2c7;
+  margin-bottom: 20px;
+}
+
+/* Centrage photo */
+.photo-centre {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Cadre élégant */
+.cadre-photo {
+  background: linear-gradient(145deg, #111, #000);
+  padding: 10px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+/* Image */
+.cadre-photo img {
+  max-width: 260px;
+  width: 100%;
+  border-radius: 14px;
+  border: 3px solid #333;
+}
+
+/* Texte */
+.bloc p {
+  line-height: 1.7;
+  margin-top: 20px;
+}
   table.activites {
     width: 100%;
     border-collapse: collapse;
