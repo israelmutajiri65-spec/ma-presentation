@@ -3,6 +3,37 @@
 <head>
 
   <style>
+    /* CONTENEUR PHOTO CENTRÉ */
+.photo-centre {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+/* CADRE PHOTO */
+.cadre-photo {
+  background: linear-gradient(145deg, #1c1c1c, #000000);
+  padding: 10px;
+  border-radius: 18px;
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.8),
+    inset 0 0 10px rgba(255,255,255,0.05);
+}
+
+/* IMAGE DANS LE CADRE */
+.cadre-photo img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 14px;
+  border: 3px solid #333;
+}
+
+/* EFFET AU TOUCHER (SUR TELEPHONE AUSSI) */
+.cadre-photo img:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
   body {
     background-color: #121212; /* fond sombre */
     color: #f0f0f0;           /* texte clair */
@@ -33,13 +64,21 @@
 
 <h2>Quand j’étais petit</h2>
 <img src="20260119_103851.jpg" alt="Photo enfance" width="250">
-<p>
+<p> <div class="photo-centre">
+  <div class="cadre-photo">
+    <img src="photo-enfance.jpg" alt="Photo enfance">
+  </div>
+</div>
 À l’âge de 3 ans, j’étais très calme et souvent pleurnichard.
 Je n’aimais pas l’école. Chaque fois que je voyais la barrière
 de l’école, je pleurais et je ne voulais pas entrer.
 J’ai détesté l’école jusqu’au moment où je me suis peu à peu
 habitué en grandissant.
-</p>
+</p> <div class="photo-centre">
+  <div class="cadre-photo">
+    <img src="photo-adulte.jpg" alt="Photo adulte">
+  </div>
+</div>
 
 <h2>Quand je suis grand</h2>
 <img src="IMG-20260109-WA2892.jpg" alt="Photo actuelle" width="250">
